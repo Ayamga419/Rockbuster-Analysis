@@ -1,9 +1,4 @@
-Here is a SQL query with a common table expression:
+Here is a SQL query with a common table expression and it probes the data for an imaginary movie rental company using PostgreSQL.
 
-WITH category_name_cte (film_id, rating, category_name) AS
-  (SELECT A.film_id,
-          A.rating,
-          C.name
-FROM film A
-LEFT JOIN film_category B ON A.film_id = B.film_id
-LEFT JOIN category C ON B.category_id = C.category_id)
+
+Rockbuster Stealth LLC is a renowed movie rental company that is facing punitive competition from other companiesthat offers streaming services. The aim of the analysis is to answer the business questions of the Management Board and provide the Business Intelligence department with data driven insights to assist in their decision making.
